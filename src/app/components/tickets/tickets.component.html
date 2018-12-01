@@ -1,0 +1,18 @@
+<div class="ticket panel panel-default">
+<div class="panel-body">
+<form (ngSubmit)="addTicket()">
+  <label>Title</label>
+  <input type="text" name="title" [(ngModel)]="ticket.title" ><br>
+  <label>AssignedTo</label>
+  <input type="text" name="assignedTo" [(ngModel)]="ticket.assignedTo" ><br>
+  <label>Completed</label>
+  <input type="text" name="doing" [(ngModel)]="ticket.doing" ><b>%</b><br>
+ 
+  <textarea name="description" [(ngModel)]="ticket.description"></textarea><br>
+  <input type="submit" value="Save" class="btn btn-success">
+</form>
+</div>
+</div>
+<div *ngFor="let ticket of listTickets">
+  <app-ticket  [ticket]="ticket" (delete)="onDelete($event)"></app-ticket>
+</div>

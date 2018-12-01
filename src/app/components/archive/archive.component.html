@@ -1,0 +1,14 @@
+<table border="1">
+  <th>#</th>
+  <th>Title</th>
+  <th>Assigned to</th>
+  <th>%</th>
+  <th>Description</th>
+  <tr *ngFor="let archive of listArchives">
+    <td>{{archive.id}} </td>
+    <td>{{archive.title}} </td>
+    <td>{{archive.assignedTo}} </td>
+    <td>{{archive.doing}} </td>
+    <td>{{archive.description}} </td>
+  </tr>
+</table>

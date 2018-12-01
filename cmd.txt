@@ -1,0 +1,3 @@
+#Avant de lancer le projet,passez la cmd:
+#npm install
+#sur votre console

@@ -1,0 +1,13 @@
+<div style="border: 2px solid black;width: 30%;text-align: center;">
+  {{ticket.title}}--{{ticket.assignedTo}} <br>
+  <div *ngIf="showDetail">
+    <b>Id:</b> {{ticket.id}} <br>
+    <b>Completed:</b> {{ticket.doing}}<br>
+    <b>Description:</b>{{ticket.description}} <br>
+  </div>
+  <hr>
+<button class="btn btn-danger" (click)="deleteTicket(ticket)">Cancel</button>
+<button class="btn btn-info" (click)="showDetails()">Details</button>
+
+
+</div>

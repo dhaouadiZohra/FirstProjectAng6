@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<button class="btn btn-primary" (click)="afficherForm()">Add new ticket</button>
+<div *ngIf="showForm">
+  <app-tickets></app-tickets>
+</div>
+<!--app-archive></app-archive-->
+<!-- this for routing -->
+<br>
+<b>********************************** avec routing******************************</b>
+<br>
+<!-- code pour le routing -->
+<nav>
+  <a routerLink="/listTickets">Tickets Managing</a>
+  <a routerLink="/archive">Archive 2016</a>
+</nav>
+<router-outlet></router-outlet>
